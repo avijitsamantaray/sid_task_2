@@ -1,0 +1,333 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Spectrum club</title>
+    <link rel="shortcut icon" href="img\mozclub logo.png" type="image/png">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.0/css/all.min.css">
+    <link rel="stylesheet" href="/style1.css">
+    <link rel="stylesheet" href="/medium.css">
+    <link rel="stylesheet" href="/small.css">
+
+
+</head>
+
+<body>
+    <div class="profile" id="profile">
+        <i class="far fa-times-circle" onclick="hide()" style="font-size: 50px; color:yellow"></i>
+        <form class="form">
+            <h4> MY PROFILE</h4>
+
+            <div class="part">
+                <h6>Your name</h6>
+                <input type="text" class="input" readonly value={{name}}>
+            </div>
+
+            <div class="part">
+                <h6>Your email</h6>
+                <input type="text" class="input" readonly value={{email}}>
+            </div>
+
+            <div class="part">
+                <h6>Your domain</h6>
+                <input type="text" class="input" readonly value={{domain}}>
+            </div>
+            <a href="/" class="signout">signout</a>
+        </form>
+    </div>
+    <div id="mainpage">
+        <section>
+            <input type="checkbox" id="check">
+            <header>
+                <h2><a href="#" class="logo"><img src="img\mozclub logo.png" alt="k"></a></h2>
+                <div class="navigation" id="navigation">
+                    <a href="#">HOME</a>
+                    <a href="#aboutus">ABOUT US</a>
+
+                    <a href="#wings">WINGS</a>
+                    <a href="#project">PROJECTS</a>
+                    <a onclick="show()">Profile</a>
+                    <a href="/">signout</a>
+                </div>
+                <label for="check">
+                    <i class="fas fa-bars menu-btn" onclick="menushow"></i>
+                    <i class="fas fa-times close-btn"></i>
+                </label>
+            </header>
+            <div class="social">
+                <a href="https://www.facebook.com/spCETrum">Facebook <i class="fab fa-facebook"></i></a>
+                <a
+                    href="https://www.linkedin.com/authwall?trk=ripf&trkInfo=AQGDe3r9XE298AAAAXo9beSQVrjxmmC60swA_oE5QCdmDtnv5QohpZKkeJhcBH6s17xlBR7wbmFJBaPjYtGuhSwuq6UkQl2qqRk2KM5Nkw8AYYgOo97SREgYzw5XEpw-J6CKE-Y=&originalReferer=https://spectrumcet.com/&sessionRedirect=https%3A%2F%2Fwww.linkedin.com%2Fin%2Fspectrum-cet-3b71431b1%2F">linkdn
+                    <i class="fab fa-linkedin"></i></a>
+                <a href="https://www.instagram.com/spectrum.cetb/?hl=en">Instagram <i
+                        class="fab fa-instagram-square"></i></a>
+                <a href="https://github.com/Spectrum-CETB   ">Github <i class="fab fa-github"></i></a>
+            </div>
+
+        </section>
+
+
+        <!-- ABOUT US -->
+
+        <div id="aboutus" class="aboutus">
+            <div class="blank"></div>
+            <h1>ABOUT US</h1>
+            <hr>
+            <div class="aboutusinside">
+                <div class="firstabout">
+
+                    <div id="aboutline"></div>
+                    <p>
+                        <C>SPECTRUM</C> ,Technical society of COLLEGE OF ENGINEERING AND TECHNOLOGY, BHUBANESWAR,a place
+                        for
+                        all
+                        technical enthusiasts to learn, discover and innovate new things in the field of Technology and
+                        Design.
+                        The name of the club " SPECTRUM ", a contribution of our alumni of 2015 batch, is particularly
+                        used
+                        to
+                        describe the characteristic colors of visible light after passing through a prism, similarly
+                        students of
+                        CET consist of different skills within them and Spectrum acts like a prism, Spectrum recognises
+                        their
+                        skills helps them to strengthen it.
+                    </p><br>
+
+                    <p>This club was established by " Bikram Keshari Panda (2015 batch) ".Spectrum got its recognition
+                        in
+                        the
+                        year 2016 and got its workspace, funding and other facilities. Primarily this was his idea to
+                        have
+                        an
+                        electronics society in our college but with the efforts of other members we established two
+                        other
+                        wings
+                        - Software and Design.The other seniors who had their valuable contribution for this initiative
+                        were:
+                        Ankit Mishra, Zighnesh Biswal, Abhishek Dash, Avinash Nayak, Tapan Kumar Pal, Krutikesh Sahoo,
+                        Abhilash
+                        Das.</p>
+                </div>
+
+
+            </div>
+        </div>
+
+        <!-- WINGS -->
+
+        <div id=wings>
+            <h1>wings</h1>
+            <hr>
+            <div class="wingscon">
+                <p class=wingsinsde id="wing4" class=wingsinsde onmouseover="wingsshow4()" onmouseout="wingshide4()">Our
+                    club SPECTRUM is so named as it provides us with different wings emitted by the hardwork from our
+                    members, showing homologous transitions between Hardware, Software and Designing.
+                <div class="winglist" id="winglist4">
+                    <li>HARDWARE</li>
+                    <li>SOFTWARE</li>
+                    <li>DESIGN</li>
+
+                    </p>
+                </div>
+
+
+
+                <p class=wingsinsde id="wing1" class=wingsinsde onmouseover="wingsshow1()" onmouseout="wingshide1()">The
+                    HARDWARE team of the Club mainly focuses on VLSI, Embedded Systems and PCB Design. We have developed
+                    many projects with implementation and testing of circuits, components, systems, etc.
+                <div class="winglist" id="winglist1">
+                    <li>VLSI</li>
+                    <li> EMBEDDED SYSTEM </li>
+                    <li>PCB DESIGN</li>
+
+                    </p>
+                </div>
+
+
+                <p class=wingsinsde id="wing2" onmouseover="wingsshow2()" onmouseout="wingshide2()">The SOFTWARE team is
+                    continuously striving for growth in the domains of Web Development, App Development, Competitive
+                    Programming, Machine Learning and Data Science. Working as a team, inspiring each other we quickly
+                    develop viable solutions for a better outcome.
+                <div class="winglist" id="winglist2">
+                    <li>COMPETITIVE PROGRAMMING</li>
+                    <li>WEB DEVELOPMENT</li>
+                    <li>APP DEVELOPMENT</li>
+                    </p>
+                </div>
+
+                <p class=wingsinsde id="wing3" onmouseover="wingsshow3()" onmouseout="wingshide3()">The DESIGN Wing of
+                    our Club has proven their creativity in UI/UX Poster Designing. We believe visual communication is a
+                    major tool to enhance various creative projects.
+                <div class="winglist" id="winglist3">
+                    <li>UI/UX DESIGNING </li>
+                    <li>POSTER DESIGNING</li>
+
+
+                    </p>
+                </div>
+
+            </div>
+        </div>
+
+
+        <!-- project -->
+
+
+        <div class="project" id=project>
+
+            <div class="blank"></div>
+            <h2>PROJECTS</h2>
+            <hr>
+            <div class="projectinside">
+
+
+
+
+                <div class="card">
+                    <img class="card-img-top" src="img\blind.jpg" alt="Card image cap">
+                    <div class="card-body">
+                        <h5 class="card-title">BHAVANA</h5>
+                        <p class="card-text">device helps physically imapired people to understand the emotions of the
+                            person they are talking to</p>
+                        <a href="#" class="btn btn-primary">GITHUB</a>
+                    </div>
+                </div>
+
+
+                <div class="card">
+                    <img class="card-img-top" src="img\toilet.jpg" alt="Card image cap">
+                    <div class="card-body">
+                        <h5 class="card-title">SMART TOILET FOR SENIOR CITIZENS AND PATIENTS</h5>
+                        <p class="card-text">A semi automated toilet that is designed for the elderly people and the patients. This toilet helps them defecate and urinate with ease and reduces the filthy labour for the hospital authorities. The use of embedded microcontroller Arduino Mega 2560 makes the system smart.</p>
+                        <a href="#" class="btn btn-primary">GITHUB</a>
+                    </div>
+                </div>
+
+
+                <div class="card">
+                    <img class="card-img-top" src="img\bot (1).jpg" alt="Card image cap">
+                    <div class="card-body">
+                        <h5 class="card-title">SUPPLY BOT</h5>
+                        <p class="card-text">Robots help to deliver food and medicine aid in flood scenarios to the affected people in remote areas. Semi finalist at IIT bombay, Eyantra competition 2019-20.</p>
+                        <a href="#" class="btn btn-primary">GITHUB</a>
+                    </div>
+                </div>
+
+
+                <div class="card">
+                    <img class="card-img-top" src="img\14-500x300.jpg" alt="Card image cap">
+                    <div class="card-body">
+                        <h5 class="card-title">Ultrasonic Radar Based Horn System</h5>
+                        <p class="card-text">It is a noiseless horn system for the vehicles to communicate with each other using ultrasonic waves</p>
+                        <a href="#" class="btn btn-primary">GITHUB</a>
+                    </div>
+                </div>
+
+
+                <div class="card">
+                    <img class="card-img-top" src="img\friendly_medico.jpg" alt="Card image cap">
+                    <div class="card-body">
+                        <h5 class="card-title">FRIENDLY-MEDICO</h5>
+                        <p class="card-text">In this pandemic not everyone of us have the courage to go to hospitals and check our own reports.this app will take some short details and keep it in a database. In future it can be used by medicals to get the health data of a person and if any issue is found by the doctor they can directly contact them and problems can be solved over phones.</p>
+                        <a href="#" class="btn btn-primary">GITHUB</a>
+                    </div>
+                </div>
+
+
+                <div class="card">
+                    <img class="card-img-top" src="img\2-500x300.jpg" alt="Card image cap">
+                    <div class="card-body">
+                        <h5 class="card-title">Extractive-Text-Summarization</h5>
+                        <p class="card-text">A simple python program which can find the most important sentences in a paragraph and can give them as the output. Quite useful for the tasks of reading short summaries of news articles and such. Unlike machine learning models, this doesn't train but rather uses a graph based approach to rank the sentences based on their cosine similarities and give the desired output as a result.</p>
+                        <a href="#" class="btn btn-primary">GITHUB</a>
+                    </div>
+                </div>
+
+
+
+
+
+
+
+
+
+
+
+            </div>
+        </div>
+    </div>
+
+    <div class="blank"></div>
+    <div class="blank"></div>
+
+    <!-- footer -->
+
+    <div class="footer">
+        <div class="blank"></div>
+
+        <div class=footercon>
+            <div class="col" id="col1">
+
+                <h3>SPECTRUM</h3>
+                <hr>
+                <p><b>SPECTRUM </b>is a place for all technical enthusiasts to learn, discover and innovate new
+                    things
+                    in the field of Technology and Design.</p>
+            </div>
+
+
+
+            <div class="col" id="col2">
+                <h3>CONTACTS</h3>
+                <hr>
+                <p>College Of Engineering And Technology, Ghatikia, Bhubaneswar - 751003</p><br>
+                <p>spectrumclub.cetb@gmail.com</p><br>
+                <p>+91-8249063374</p>
+
+            </div>
+
+        </div>
+
+
+
+        <div class="blank"></div>
+        <div class="blank"></div>
+        <div class="blank"></div>
+    </div>
+    </div>
+
+
+
+
+
+
+
+
+
+
+    <script src="/index.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
+        crossorigin="anonymous"></script>
+
+
+    <script>
+        function hide() {
+            document.getElementById("profile").style.transform = "translateY(-100%)"
+        }
+        function show() {
+            document.getElementById("profile").style.transform = "translateY(0%)"
+
+
+        }
+
+    </script>
+
+</body>
+
+</html>

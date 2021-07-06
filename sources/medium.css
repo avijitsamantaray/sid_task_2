@@ -1,0 +1,93 @@
+
+@media (max-width: 992px){ 
+
+   
+    section{
+        height: 60vh;
+    }
+    header{
+        padding-top: 30px;
+    }
+   
+
+.aboutusinside{
+      flex-direction: column;
+      margin:auto;
+      align-items: center;
+    }
+    .aboutimg img{
+      
+      width: 60%;
+      height: 50%;
+      opacity: 0.5;
+  }
+      header .navigation{
+        display: none;
+      }
+    
+      label{
+        display: block;
+        font-size: 25px;
+        cursor: pointer;
+        transition: 0.3s;
+        transition-property: color;
+        padding-right: 50px;
+      }
+    
+      label:hover{
+        color: #fff;
+      }
+    
+      label .close-btn{
+        display: none;
+      }
+    
+      header .navigation{
+        z-index: 10;
+        position: fixed;
+        transform: translateX(-100%);
+        top: 0;
+        bottom: 0;
+        width: 60%;
+        background: rgba(114, 223, 255, 0.9);
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        transition: all 1s;
+        
+      }
+      #check:checked ~  header .navigation{
+        transform: translateX(0%);
+        
+      }
+    
+      #check:checked ~  header .navigation a{
+        
+        font-weight: 700;
+        margin-right: 0;
+        margin-bottom: 50px;
+        letter-spacing: 2px;
+      }
+    
+      #check:checked ~ header label .close-btn{
+        z-index: 2;
+        display: block;
+      }
+    
+      #check:checked ~ header label .menu-btn{
+        display: none;
+      }
+    
+    
+    
+      header .logo{
+        position: absolute;
+        bottom: -6px;
+        top: -30px;
+      }
+      
+    
+    
+    }
+    
